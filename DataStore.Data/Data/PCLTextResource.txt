@@ -1,0 +1,8 @@
+﻿{"Collection": [
+      {"Id": "1","Text": "Buy some cat food", "Description": "The cats are hungry"},
+      {"Id": "2","Text": "Learn F#", "Description": "Seems like a functional idea"},
+      {"Id": "3","Text": "Learn to play guitar", "Description": "Noted"},
+      {"Id": "4","Text": "Buy some new candles", "Description": "Pine and cranberry for that winter feel"},
+       {"Id": "5","Text": "Complete holiday shopping", "Description": "Keep it a secret!"},
+       {"Id": "6","Text": "Finish a todo list", "Description": "Done"}
+    ]}
