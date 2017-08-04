@@ -38,7 +38,6 @@
     <Compile Include="Helpers\MessengingCenterAlert.cs" />
     <Compile Include="Helpers\ObservableObject.cs" />
     <Compile Include="Helpers\ObservableRangeCollection.cs" />
-    <Compile Include="Infrastructure.cs" />
     <Compile Include="Models\BaseDataObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IDataStore.cs" />

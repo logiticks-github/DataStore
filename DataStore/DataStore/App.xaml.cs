@@ -24,12 +24,12 @@ namespace DataStore
                     new NavigationPage(new ItemsPage())
                     {
                         Title = "Browse",
-                        Icon = Device.OnPlatform("tab_feed.png",null,null)
+                        Icon =  Device.RuntimePlatform==Device.iOS?"tab_feed.png":null,
                     },
                     new NavigationPage(new AboutPage())
                     {
                         Title = "About",
-                        Icon = Device.OnPlatform("tab_about.png",null,null)
+                        Icon = Device.RuntimePlatform==Device.iOS?"tab_about.png":null,
                     },
                 }
             };
