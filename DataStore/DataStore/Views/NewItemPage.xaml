@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DataStore.Views.NewItemPage"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:fab="clr-namespace:FAB.Forms;assembly=FAB.Forms"
+             x:Class="DataStore.Views.NewItemPage"
 		Title="New Item">
-	<ContentPage.ToolbarItems>
-		<ToolbarItem Text="Save" Clicked="Save_Clicked" />
-	</ContentPage.ToolbarItems>
-	<ContentPage.Content>
-		<StackLayout Spacing="20" Padding="15">
-			<Label Text="Text" FontSize="Medium" />
-			<Entry Text="{Binding Item.Text}" FontSize="Small" />
-			<Label Text="Description" FontSize="Medium" />
-			<Editor Text="{Binding Item.Description}" FontSize="Small" Margin="0" />
-		</StackLayout>
-	</ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Command="{Binding SubmitCommand}" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout Spacing="20" Padding="15" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+            <Label Text="Text" FontSize="Medium" />
+            <Entry Text="{Binding Text}" FontSize="Small" />
+            <Label Text="Description" FontSize="Medium" />
+            <Editor Text="{Binding Description}" FontSize="Small" Margin="0" />
+        </StackLayout>
+            <fab:FloatingActionButton
+							Source="save.png"
+							Size="Normal"
+							NormalColor="#064579"
+				            RippleColor="#05365f"
+                            Command="{Binding SubmitCommand}"
+                            AbsoluteLayout.LayoutFlags="PositionProportional"  AbsoluteLayout.LayoutBounds="0.05,0.97,70,70"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
 </ContentPage>
+    

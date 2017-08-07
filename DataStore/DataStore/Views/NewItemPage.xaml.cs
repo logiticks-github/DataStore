@@ -3,30 +3,21 @@
 using DataStore.Models;
 
 using Xamarin.Forms;
+using DataStore.ViewModels;
 
 namespace DataStore.Views
 {
     public partial class NewItemPage : ContentPage
     {
-        public Item Item { get; set; }
+        public NewItemViewModel ItemViewModel { get; set; }
 
         public NewItemPage()
         {
             InitializeComponent();
 
-            Item = new Item
-            {
-                Text = "Item name",
-                Description = "This is a nice description"
-            };
+            ItemViewModel = new NewItemViewModel(Navigation);
 
-            BindingContext = this;
-        }
-
-        async void Save_Clicked(object sender, EventArgs e)
-        {
-            MessagingCenter.Send(this, "AddItem", Item);
-            await Navigation.PopToRootAsync();
+            BindingContext = ItemViewModel;
         }
     }
 }

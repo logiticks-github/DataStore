@@ -14,28 +14,42 @@ namespace DataStore.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
+        #region Properties
         public ObservableRangeCollection<Item> Items { get; set; }
-        public Command LoadItemsCommand { get; set; }
 
         /// <summary>
         /// Get the azure service instance
         /// </summary>
         public IDataStore<Item> ItemDataStore => DependencyService.Get<IDataStore<Item>>();
 
+        #endregion
+
+        #region Constructor
         public ItemsViewModel()
         {
             Title = "Browse";
             Items = new ObservableRangeCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
             
-            MessagingCenter.Subscribe<NewItemPage, Item>(this, "AddItem", async (obj, item) =>
+            MessagingCenter.Subscribe<NewItemViewModel, Item>(this, "AddItem", async (obj, item) =>
             {
-                var _item = item as Item;
-                Items.Add(_item);
-                await ItemDataStore.AddItemAsync(_item);
+                var newItem = item as Item;
+                Items.Add(newItem);
+                await ItemDataStore.AddItemAsync(newItem);
             });
         }
 
+        #endregion
+
+        #region Commands
+        /// <summary>
+        /// Command to load the items
+        /// </summary>
+        public Command LoadItemsCommand { get; set; }
+
+        #endregion
+
+        #region Function
         async Task ExecuteLoadItemsCommand()
         {
             if (IsBusy)
@@ -64,5 +78,7 @@ namespace DataStore.ViewModels
                 IsBusy = false;
             }
         }
+
+        #endregion
     }
 }

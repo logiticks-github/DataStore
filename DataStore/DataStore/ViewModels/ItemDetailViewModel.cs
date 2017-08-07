@@ -5,12 +5,15 @@ namespace DataStore.ViewModels
 {
     public class ItemDetailViewModel : BaseViewModel
     {
-        public Item Item { get; set; }
+        #region Constructor
         public ItemDetailViewModel(Item item = null)
         {
             Title = item.Text;
             Item = item;
         }
+        #endregion
+
+        #region Properties
 
         int quantity = 1;
         public int Quantity
@@ -18,5 +21,10 @@ namespace DataStore.ViewModels
             get { return quantity; }
             set { SetProperty(ref quantity, value); }
         }
+
+        public Item Item { get; set; }
+
+        #endregion
+
     }
 }
