@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStore", "DataStore\DataStore\DataStore.csproj", "{71C101C3-42BA-4328-B759-94076CCF58A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStore.UI", "DataStore\DataStore\DataStore.UI.csproj", "{71C101C3-42BA-4328-B759-94076CCF58A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStore.Android", "DataStore\DataStore.Android\DataStore.Android.csproj", "{13E6A6DC-C235-4338-823B-2C24208A1C7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStore.UI.Android", "DataStore\DataStore.Android\DataStore.UI.Android.csproj", "{13E6A6DC-C235-4338-823B-2C24208A1C7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStore.iOS", "DataStore\DataStore.iOS\DataStore.iOS.csproj", "{9B46BC0A-31D3-4B7E-A770-3319C091A250}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStore.UI.iOS", "DataStore\DataStore.iOS\DataStore.UI.iOS.csproj", "{9B46BC0A-31D3-4B7E-A770-3319C091A250}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{550BB933-480D-432D-9C48-655DACA592BA}"
 EndProject
@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{A2C58E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStore.Models", "DataStore.Models\DataStore.Models.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{BFB4A21F-4512-4950-9B94-0A6B4BCD94D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobility.Infrastructure", "Infrastructure\Mobility.Infrastructure.csproj", "{BFB4A21F-4512-4950-9B94-0A6B4BCD94D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStore.Data", "DataStore.Data\DataStore.Data.csproj", "{083BC3D2-4B2F-4F34-91FE-E949D4D2F8F9}"
 EndProject

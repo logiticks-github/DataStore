@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Infrastructure.Helpers
+namespace Mobility.Infrastructure.Helpers
 {
     public class MessagingCenterAlert
     {

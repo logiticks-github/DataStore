@@ -5,7 +5,7 @@ using DataStore.ViewModels;
 
 using Xamarin.Forms;
 
-namespace DataStore.Views
+namespace DataStore.UI.Views
 {
     public partial class ItemsPage : ContentPage
     {

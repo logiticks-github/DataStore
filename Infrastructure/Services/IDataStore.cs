@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Services
+namespace Mobility.Infrastructure.Services
 {
     public interface IDataStore<T>
     {

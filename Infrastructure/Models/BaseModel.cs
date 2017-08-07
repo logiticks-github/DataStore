@@ -1,7 +1,7 @@
-﻿using Infrastructure.Helpers;
+﻿using Mobility.Infrastructure.Helpers;
 using System;
 
-namespace Infrastructure.Models
+namespace Mobility.Infrastructure.Models
 {
     public class BaseModel 
     {

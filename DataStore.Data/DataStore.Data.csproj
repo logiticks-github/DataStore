@@ -64,9 +64,9 @@
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>DataStore.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
+    <ProjectReference Include="..\Infrastructure\Mobility.Infrastructure.csproj">
       <Project>{bfb4a21f-4512-4950-9b94-0a6b4bcd94d6}</Project>
-      <Name>Infrastructure</Name>
+      <Name>Mobility.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

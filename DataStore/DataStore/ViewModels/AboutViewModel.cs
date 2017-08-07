@@ -1,4 +1,4 @@
-﻿using Infrastructure.ViewModels;
+﻿using Mobility.Infrastructure.ViewModels;
 using System;
 using System.Windows.Input;
 using Xamarin.Forms;

@@ -1,5 +1,5 @@
 ﻿using DataStore.Models;
-using Infrastructure.ViewModels;
+using Mobility.Infrastructure.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

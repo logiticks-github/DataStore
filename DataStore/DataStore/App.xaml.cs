@@ -1,4 +1,4 @@
-﻿using DataStore.Views;
+﻿using DataStore.UI.Views;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

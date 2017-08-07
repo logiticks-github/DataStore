@@ -1,7 +1,7 @@
 ﻿
 using Xamarin.Forms;
 
-namespace DataStore.Views
+namespace DataStore.UI.Views
 {
     public partial class AboutPage : ContentPage
     {

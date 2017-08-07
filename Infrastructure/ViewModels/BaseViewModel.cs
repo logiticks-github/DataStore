@@ -1,9 +1,9 @@
 ﻿
 
-using Infrastructure.Helpers;
+using Mobility.Infrastructure.Helpers;
 using Xamarin.Forms;
 
-namespace Infrastructure.ViewModels
+namespace Mobility.Infrastructure.ViewModels
 {
     public class BaseViewModel : ObservableObject
     {

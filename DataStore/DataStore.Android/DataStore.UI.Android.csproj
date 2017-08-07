@@ -6,7 +6,7 @@
     <ProjectGuid>{13E6A6DC-C235-4338-823B-2C24208A1C7C}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>DataStore.Droid</RootNamespace>
+    <RootNamespace>DataStore.UI.Android</RootNamespace>
     <AssemblyName>DataStore.Android</AssemblyName>
     <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
@@ -139,13 +139,13 @@
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>DataStore.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Infrastructure\Infrastructure.csproj">
+    <ProjectReference Include="..\..\Infrastructure\Mobility.Infrastructure.csproj">
       <Project>{bfb4a21f-4512-4950-9b94-0a6b4bcd94d6}</Project>
-      <Name>Infrastructure</Name>
+      <Name>Mobility.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataStore\DataStore.csproj">
-      <Project>{d8526abd-ef75-44cc-b019-cd84005bcb1a}</Project>
-      <Name>DataStore</Name>
+    <ProjectReference Include="..\DataStore\DataStore.UI.csproj">
+      <Project>{71C101C3-42BA-4328-B759-94076CCF58A8}</Project>
+      <Name>DataStore.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

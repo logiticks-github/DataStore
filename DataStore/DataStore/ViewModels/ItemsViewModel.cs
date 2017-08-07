@@ -3,12 +3,12 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 
 using DataStore.Models;
-using DataStore.Views;
+using DataStore.UI.Views;
 
 using Xamarin.Forms;
-using Infrastructure.ViewModels;
-using Infrastructure.Helpers;
-using Infrastructure.Services;
+using Mobility.Infrastructure.ViewModels;
+using Mobility.Infrastructure.Helpers;
+using Mobility.Infrastructure.Services;
 
 namespace DataStore.ViewModels
 {

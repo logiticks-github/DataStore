@@ -125,13 +125,13 @@
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>DataStore.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Infrastructure\Infrastructure.csproj">
+    <ProjectReference Include="..\..\Infrastructure\Mobility.Infrastructure.csproj">
       <Project>{bfb4a21f-4512-4950-9b94-0a6b4bcd94d6}</Project>
-      <Name>Infrastructure</Name>
+      <Name>Mobility.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataStore\DataStore.csproj">
-      <Project>{ff9d8840-8031-4173-a241-0b831cf8b7cf}</Project>
-      <Name>DataStore</Name>
+    <ProjectReference Include="..\DataStore\DataStore.UI.csproj">
+      <Project>{71C101C3-42BA-4328-B759-94076CCF58A8}</Project>
+      <Name>DataStore.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Infrastructure.Helpers
+namespace Mobility.Infrastructure.Helpers
 {
     /// <summary>
     /// Observable object with INotifyPropertyChanged implemented

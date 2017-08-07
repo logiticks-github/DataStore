@@ -2,10 +2,11 @@
 using Android.Content.PM;
 using Android.OS;
 using DataStore.Models;
-using Infrastructure.Services;
+using DataStore.UI.Android;
+using Mobility.Infrastructure.Services;
 using Xamarin.Forms;
 
-namespace DataStore.Droid
+namespace DataStore.UI.Droid
 {
     [Activity(Label = "@string/app_name", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity

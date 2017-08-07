@@ -1,4 +1,4 @@
-﻿using Infrastructure.Models;
+﻿using Mobility.Infrastructure.Models;
 
 namespace DataStore.Models
 {
